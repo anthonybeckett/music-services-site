@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
+import Layout from "../Shared/Layout";
 
-function Home({name}) {
-  return <div>Hi {name}</div>;
+function Home() {
+    return <div>Hi</div>;
 }
+
+Home.layout = (page) => <Layout children={page} title="Home" />;
 
 export default Home;
